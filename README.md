@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# My Simple TODO list
+My simple todo list merupakan sebuah website untuk mencatat segala aktifitas yang ingin anda lakukan. Anda bisa menambahkan todo, merubah todo, dan juga menghapus todo. Semoga bermanfaat!.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Detail
+Website ini menggunakan google auth sebagai indikasi login. Tentunya akan lebih mudah dan tidak perlu mengimputkan field username atau password.
+Data yang ditampilkan juga sesuai dengan data yang anda inputkan sendiri, karena terintegrasi dengan firebase.
 
-## Available Scripts
+## Penjelasan Fitur
+1. Login
+   menggunakan layanan google auth. User hanya perlu menekan tombol login dan memilih akun yang akan digunakan untuk keperluan login tersebut.
+2. Say Hello
+   menampilkan display name sesuai akun yang sedang Login.
+3. Add todo 
+   User bisa menambahkan todo.
+4. Change Todo
+   User bisa merubah status todo dari procees ke done dan juga sebaliknya.
+5. Delete Todo
+   User bisa menghapus todo.
+6. Get All Todo based on User login
+   Menampilkan data todo sesuai user yang login.
+   
+   
+   
+### JAWABAN DARI PERTANYAAN
+1. Apakah Kegunaan JSON pada REST API?
+   Jawaban: JSON (JavaScript Object Notation) adalah format yang umum digunakan untuk pertukaran data antara server dan klien dalam pengembangan web,             termasuk dalam implementasi REST API. Ringan dan sederhana sehingga lebih efisien ketika melakukan pertukaran data.
+   
+2. Jelaskan bagaimana REST API bekerja
+   ## yang pertama
+      REST API mengguanakan metode HTTP (GET, POST, PUT, PATCH, DELETE), ini akan menentukan jenis operasi yang ingin dilakukan terhadap sumber
+      (resource) yang diinginkan. Sumber daya ini di identifikasi dengan URL / Endpoint yang dapat di akses dan di manipulasi.
+   ## yang kedua
+      Klien membuat permintaan HTTP ke server (Request) dengan metode yang sudah di jabarkan di atas. Dalam proses ini bisa menyertakan data berupa
+      JSON atau lain nya seperti params dan juga query.
+   ## yang ketiga
+      Server menerima request dan akan melakukan routing sesuai endpoint yang dituju. Server memproses permintaan yang diterima berdasarkan metode
+      HTTP dan data yang dikirimkan. Misalnya, jika permintaan GET diterima, server akan mencari sumber daya yang sesuai dan mengirimkan respons
+      dengan data yang diminta ke klien. Respons ini biasanya berisi status HTTP, seperti kode status (misalnya 200 untuk berhasil, 404 untuk tidak
+      ditemukan), serta data yang diminta dalam format JSON atau bentuk lainnya.
+   ## yang keempat
+      Klien menerima respons dari server dan memprosesnya sesuai kebutuhan. Data yang dikirimkan dapat digunakan untuk memperbarui tampilan aplikasi,
+      menampilkan pesan kesalahan, atau melakukan tindakan lain yang sesuai. Dan selesai.
 
-In the project directory, you can run:
+3. Buatlah sebuah website dengan fungsi dibawah ini:
+   ## Login Page (done)
+   ## TODO list (done)
+   ## FSW dan FE (done)
 
-### `npm start`
+4. Hal - hal yang perlu dipastikan adalah:
+   ## Memastikan data yang di tampilkan hanya data yang sesuai/ dimiliki oleh user yang login (done)
+   ## Deploy (done)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. Membuat video mengenai aplikasi yang dibuat, berisi penjelasan singkat dan source code. 
+   ## (done)
+   
+## LINK WEBSITE 
+   https://mysimple-todo-list.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
